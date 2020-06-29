@@ -1,6 +1,11 @@
 <template>
    <ul id="nav-mobile" class="hide-on-med-and-down">
-      <li v-for="btn in btns" :key="btn.id"><a href=""> <i :class="btn.cls"> {{ btn.icon }} </i> {{ btn.name }}</a></li>
+      <li v-for="btn in btns" :key="btn.id">
+         <router-link :to="btn.url">
+            <i :class="btn.cls"> {{ btn.icon }} </i>
+            {{ btn.name }}
+         </router-link>
+      </li>
    </ul>
 </template>
 

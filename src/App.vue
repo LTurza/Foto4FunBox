@@ -1,12 +1,13 @@
 <template>
   <div id="app">
     <app-nav-bar/>
+    <router-view/>
   </div>
 </template>
 
 <script>
 
-import NavBar from "./Shared/NavBar/NavBar";
+import NavBar from "./components/Shared/NavBar/NavBar";
 
 export default {
   name: 'App',

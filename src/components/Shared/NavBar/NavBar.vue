@@ -1,5 +1,6 @@
 <template>
-   <div>
+<div>
+   <div class="navbar-fixed">
       <nav class="indigo nav-height">
          <div class="nav-wrapper">
             <div class="container">
@@ -12,8 +13,10 @@
             </div>
          </div>
       </nav>
-      <app-side-nav :tabs="sideTabs"/>
+
    </div>
+   <app-side-nav :tabs="sideTabs" name="Foto4FunBox"/>
+</div>
 </template>
 
 <script>
@@ -33,12 +36,12 @@
       data() {
          return {
             btnsLeft: [
-               {id: 'HomeDesk', name: 'STRONA GŁÓWNA', icon: 'credit_card', cls: 'material-icons left'},
-               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right'}
+               {id: 'HomeDesk', name: 'STRONA GŁÓWNA', icon: 'credit_card', cls: 'material-icons left', url: '/'},
+               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets'}
             ],
             btnsRight: [
-               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left'},
-               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right'}
+               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: ''},
+               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: ''}
             ],
             sideTabs: [
                {id: 'HomeMobile', name: 'STRONA GŁÓWNA', icon: 'credit_card', url: ''},
@@ -46,7 +49,7 @@
                {id: 'PromoMobile', name: 'PROMOCJE', icon: 'attach_money', url: ''},
                {id: 'ContactMobile', name: 'KONTAKT', icon: 'call', url: ''}
             ],
-            source: require('./../../assets/logo.svg')
+            source: require('../../../assets/logo.svg')
          }
       }
    }
