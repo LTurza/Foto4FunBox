@@ -1,5 +1,7 @@
 <template>
-   <img :src="source" class="bg" width="100%">
+   <div class="parallax-container bg">
+      <div class="parallax"><img :src="source"></div>
+   </div>
 </template>
 
 <script>
@@ -11,7 +13,7 @@
 
 <style scoped>
    .bg {
-      height: 100vh;
+      height: 90vh;
    }
    @media only screen and (max-width: 411px) {
       .bg {

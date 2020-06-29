@@ -13,13 +13,26 @@
       >
          <div v-if="content.id === 1" class="font justify" v-html="content.desc"></div>
       </app-content>
-
+      <app-paralax-bg :source="source"/>
+      <app-content
+              v-for="content in contentTab"
+              :key="content.id"
+              :title="content.title"
+              :url="content.image"
+              :textSide="content.textSide"
+              :imgSide="content.imgSide"
+              :desc="content.desc"
+              :id="content.id"
+      >
+         <div v-if="content.id === 1" class="font justify" v-html="content.desc"></div>
+      </app-content>
    </div>
 </template>
 
 <script>
    import BgImage from "./Elements/BgImage";
    import Content from "./Elements/Content";
+   import ParallaxBg from "./Elements/ParallaxBg";
 
    export default {
       name: "HomePage",
@@ -58,7 +71,8 @@
       },
       components: {
          appBgImage: BgImage,
-         appContent: Content
+         appContent: Content,
+         appParalaxBg: ParallaxBg
       }
    }
 </script>
@@ -69,6 +83,16 @@
    }
    .font {
       font-size: 1.2rem;
+   }
+   @media only screen and (max-width: 1024px) {
+      .font {
+         font-size: 1rem !important;
+      }
+   }
+   @media only screen and (min-width: 1025px) {
+      .font {
+         margin-top: 5%;
+      }
    }
 
 </style>

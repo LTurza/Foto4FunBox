@@ -1,5 +1,5 @@
 <template>
-   <ul id="nav-mobile" class="hide-on-med-and-down">
+   <ul class="hide-on-med-and-down">
       <li v-for="btn in btns" :key="btn.id">
          <router-link :to="btn.url">
             <i :class="btn.cls"> {{ btn.icon }} </i>
