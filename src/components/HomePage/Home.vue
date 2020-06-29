@@ -15,7 +15,7 @@
       </app-content>
       <app-paralax-bg :source="source"/>
       <app-content
-              v-for="content in contentTab"
+              v-for="content in contentTab2"
               :key="content.id"
               :title="content.title"
               :url="content.image"
@@ -24,8 +24,9 @@
               :desc="content.desc"
               :id="content.id"
       >
-         <div v-if="content.id === 1" class="font justify" v-html="content.desc"></div>
+         <div class="font justify" v-html="content.desc"></div>
       </app-content>
+      <app-paralax-bg :source="source"/>
    </div>
 </template>
 
@@ -57,16 +58,40 @@
                   id: 2,
                   title: 'Pakiety',
                   desc: [
-                     { cls: 'grey-text', desc: 'Pakiet miniBox'},
-                     { cls: 'yellow-text', desc: 'Pakiet standardBox'},
-                     { cls: 'pink-text', desc: 'Pakiet standardBox+'},
-                     { cls: 'indigo-text', desc: 'Pakiet VIPBox'}
+                     {cls: 'grey-text', desc: 'Pakiet miniBox'},
+                     {cls: 'yellow-text', desc: 'Pakiet standardBox'},
+                     {cls: 'pink-text', desc: 'Pakiet standardBox+'},
+                     {cls: 'indigo-text', desc: 'Pakiet VIPBox'}
                   ],
                   image: require('./../../assets/bg.jpg'),
                   textSide: 'right',
                   imgSide: 'left',
                }
-            ]
+            ],
+            contentTab2: [
+               {
+                  id: 3,
+                  title: 'Gadżety',
+                  desc: '<ul>' +
+                      '<li>Do dyspozycji macie śmieszne gadżety:</li>' +
+                     '<li>kapelusze</li>'+
+                     '<li>okulary</li>'+
+                     '<li>wąsy</li>'+
+                     '<li>usta</li>'+
+                     '<li>peruki</li>'+
+                     '<li>i wiele innych, które urozmaicą waszą zabawę!</li>'+
+                     '</ul>',
+                  image: require('./../../assets/bg.jpg'),
+                  textSide: 'left',
+                  imgSide: 'right'
+               },
+               {
+                  id: 4,
+                  title: 'Najczęstsze pytania',
+                  desc: '',
+                  textSide: 'center'
+               }
+            ],
          }
       },
       components: {
@@ -81,14 +106,17 @@
    .justify {
       text-align: justify;
    }
+
    .font {
       font-size: 1.2rem;
    }
+
    @media only screen and (max-width: 1024px) {
       .font {
          font-size: 1rem !important;
       }
    }
+
    @media only screen and (min-width: 1025px) {
       .font {
          margin-top: 5%;

@@ -8,7 +8,7 @@
                      <h4  class="center">{{title}}</h4>
                   </div>
                   <div :class="'col s12 m12 l6 justify ' + textSide">
-                     <slot v-if="id === 1"></slot>
+                     <slot v-if="id !== 2"></slot>
                      <div class="row  packets"  v-if="id === 2">
                         <div class="col l9 s8 offset-s2 offset-l3" v-for="(d,index) in desc" :key="index">
                            <i :class="'material-icons left ' + d.cls">brightness_1</i>
@@ -21,7 +21,7 @@
                         </div>
                      </div>
                   </div>
-                  <div :class="'col s10 m10 l6 offset-s1 offset-m1 img' + imgSide">
+                  <div  v-if="id !== 4" :class="'col s10 m10 l6 offset-s1 offset-m1 img' + imgSide">
                      <img :src="url" class="image z-depth-3" alt="">
                   </div>
                </div>

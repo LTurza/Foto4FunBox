@@ -13,7 +13,7 @@
 
 <style scoped>
    .bg {
-      height: 90vh;
+      height: 100vh;
    }
    @media only screen and (max-width: 411px) {
       .bg {
