@@ -41,7 +41,7 @@
       name: "HomePage",
       data() {
          return {
-            bgImage: require('../../assets/bg2.jpg'),
+            bgImage: require('../../assets/bg2.webp'),
             parallax: require('./../../assets/index-bg-1.svg'),
             parallax2: require('./../../assets/index-bg-2.svg'),
             parallaxMobile: require('./../../assets/contentMobile1.svg'),
@@ -56,7 +56,7 @@
                       '<span class="indigo-text">Po około 10 sek.</span> Można odebrać już wydrukowane zdjęcia! Zdjęcia standardowo drukowane są o wymiarach\n' +
                       '<span class="indigo-text">10x15 cm. PERSONALIZACJA:\n' +
                       '</span> tła, tekstu, daty, ramki, grafiki. Wybór różnej ilości i układu zdjęć na wydruku.',
-                  image: require('./../../assets/content11.jpg'),
+                  image: require('./../../assets/content11.webp'),
                   textSide: 'left',
                   imgSide: 'right'
                },
@@ -69,7 +69,7 @@
                      {cls: 'pink-text', desc: 'Pakiet standardBox+'},
                      {cls: 'indigo-text', desc: 'Pakiet VIPBox'}
                   ],
-                  image: require('./../../assets/bg.jpg'),
+                  image: require('./../../assets/bg.webp'),
                   textSide: 'right',
                   imgSide: 'left',
                }
@@ -87,7 +87,7 @@
                      '<li>peruki</li>'+
                      '<li>i wiele innych, które urozmaicą waszą zabawę!</li>'+
                      '</ul>',
-                  image: require('./../../assets/bg.jpg'),
+                  image: require('./../../assets/bg.webp'),
                   textSide: 'left',
                   imgSide: 'right'
                },
