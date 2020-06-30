@@ -1,6 +1,6 @@
 <template>
    <div class="parallax-container bg">
-      <div class="parallax"><img :src="source" :alt="imgAlt" width="100%"></div>
+      <div class="parallax"><img :src="source" :alt="imgAlt"></div>
    </div>
 </template>
 
@@ -14,6 +14,11 @@
 <style scoped>
    .bg {
       height: 100vh;
+      background-color: black;
+      z-index: 100 !important;
+   }
+   img{
+      z-index: 1000 !important;
    }
    @media only screen and (max-width: 411px) {
       .bg {

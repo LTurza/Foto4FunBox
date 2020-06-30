@@ -65,7 +65,7 @@
                   title: 'Pakiety',
                   desc: [
                      {cls: 'grey-text ', desc: 'Pakiet miniBox'},
-                     {cls: 'yel-text', desc: 'Pakiet standardBox'},
+                     {cls: 'yellow-text', desc: 'Pakiet standardBox'},
                      {cls: 'pink-text', desc: 'Pakiet standardBox+'},
                      {cls: 'indigo-text', desc: 'Pakiet VIPBox'}
                   ],
