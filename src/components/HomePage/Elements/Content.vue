@@ -22,7 +22,7 @@
                      </div>
                   </div>
                   <div  v-if="id !== 4" :class="'col s10 m10 l6 offset-s1 offset-m1 img' + imgSide">
-                     <img :src="url" class="image z-depth-3" alt="">
+                     <img :src="url" class="image z-depth-3" alt="image">
                   </div>
                </div>
             </div>

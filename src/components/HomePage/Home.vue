@@ -1,6 +1,6 @@
 <template>
    <div>
-      <app-bg-image :source="source"/>
+      <app-bg-image :source="source" img-alt="background"/>
       <app-content
               v-for="content in contentTab"
               :key="content.id"
@@ -13,7 +13,7 @@
       >
          <div v-if="content.id === 1" class="font justify" v-html="content.desc"></div>
       </app-content>
-      <app-paralax-bg :source="source"/>
+      <app-paralax-bg :source="source" imgAlt="paralax1"/>
       <app-content
               v-for="content in contentTab2"
               :key="content.id"
@@ -26,7 +26,7 @@
       >
          <div class="font justify" v-html="content.desc"></div>
       </app-content>
-      <app-paralax-bg :source="source"/>
+      <app-paralax-bg :source="source" imgAlt="paralax2"/>
    </div>
 </template>
 
@@ -58,8 +58,8 @@
                   id: 2,
                   title: 'Pakiety',
                   desc: [
-                     {cls: 'grey-text', desc: 'Pakiet miniBox'},
-                     {cls: 'yellow-text', desc: 'Pakiet standardBox'},
+                     {cls: 'grey-text ', desc: 'Pakiet miniBox'},
+                     {cls: 'yel-text', desc: 'Pakiet standardBox'},
                      {cls: 'pink-text', desc: 'Pakiet standardBox+'},
                      {cls: 'indigo-text', desc: 'Pakiet VIPBox'}
                   ],
@@ -121,6 +121,9 @@
       .font {
          margin-top: 5%;
       }
+   }
+   .yel-text{
+      color: #fbc02d !important;
    }
 
 </style>

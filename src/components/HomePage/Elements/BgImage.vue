@@ -1,13 +1,13 @@
 <template>
    <div class="parallax-container bg">
-      <div class="parallax"><img :src="source"></div>
+      <div class="parallax"><img :src="source" :alt="imgAlt"></div>
    </div>
 </template>
 
 <script>
    export default {
       name: "BgImage",
-      props: ['source']
+      props: ['source', 'imgAlt']
    }
 </script>
 

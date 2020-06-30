@@ -23,7 +23,7 @@
 
    a {
       text-decoration: none;
-      color: black;
+      color: ghostwhite;
       height: 100px !important;
       padding-top: 18px;
       font-size: 1rem;
