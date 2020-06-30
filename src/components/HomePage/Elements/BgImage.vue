@@ -1,6 +1,6 @@
 <template>
    <div class="parallax-container bg">
-      <div class="parallax"><img :src="source" :alt="imgAlt"></div>
+      <div class="parallax"><img :src="source" :alt="imgAlt" width="100%"></div>
    </div>
 </template>
 

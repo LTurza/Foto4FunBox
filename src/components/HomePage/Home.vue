@@ -1,6 +1,6 @@
 <template>
    <div>
-      <app-bg-image :source="source" img-alt="background"/>
+      <app-bg-image :source="bgImage" img-alt="background"/>
       <app-content
               v-for="content in contentTab"
               :key="content.id"
@@ -13,7 +13,8 @@
       >
          <div v-if="content.id === 1" class="font justify" v-html="content.desc"></div>
       </app-content>
-      <app-paralax-bg :source="source" imgAlt="paralax1"/>
+      <app-paralax-bg :source="parallax" imgAlt="parallax" class="hide-on-med-and-down"/>
+      <app-paralax-bg :source="parallaxMobile" imgAlt="parallax" class="hide-on-large-only"/>
       <app-content
               v-for="content in contentTab2"
               :key="content.id"
@@ -26,8 +27,8 @@
       >
          <div class="font justify" v-html="content.desc"></div>
       </app-content>
-      <app-paralax-bg :source="source2" imgAlt="paralax2" class="hide-on-med-and-down"/>
-      <app-paralax-bg :source="sourceMobile2" imgAlt="paralax2" class="hide-on-large-only"/>
+      <app-paralax-bg :source="parallax2" imgAlt="parallax2" class="hide-on-med-and-down"/>
+      <app-paralax-bg :source="parallaxMobile2" imgAlt="parallax2" class="hide-on-large-only"/>
    </div>
 </template>
 
@@ -40,10 +41,11 @@
       name: "HomePage",
       data() {
          return {
-            source: require('./../../assets/index-bg-1.svg'),
-            source2: require('./../../assets/index-bg-2.svg'),
-            sourceMobile: require('./../../assets/contentMobile1.svg'),
-            sourceMobile2: require('./../../assets/contentMobile2.svg'),
+            bgImage: require('../../assets/bg2.jpg'),
+            parallax: require('./../../assets/index-bg-1.svg'),
+            parallax2: require('./../../assets/index-bg-2.svg'),
+            parallaxMobile: require('./../../assets/contentMobile1.svg'),
+            parallaxMobile2: require('./../../assets/contentMobile2.svg'),
             contentTab: [
                {
                   id: 1,
