@@ -26,7 +26,8 @@
       >
          <div class="font justify" v-html="content.desc"></div>
       </app-content>
-      <app-paralax-bg :source="source" imgAlt="paralax2"/>
+      <app-paralax-bg :source="source2" imgAlt="paralax2" class="hide-on-med-and-down"/>
+      <app-paralax-bg :source="sourceMobile2" imgAlt="paralax2" class="hide-on-large-only"/>
    </div>
 </template>
 
@@ -39,7 +40,10 @@
       name: "HomePage",
       data() {
          return {
-            source: require('./../../assets/bg.jpg'),
+            source: require('./../../assets/index-bg-1.svg'),
+            source2: require('./../../assets/index-bg-2.svg'),
+            sourceMobile: require('./../../assets/contentMobile1.svg'),
+            sourceMobile2: require('./../../assets/contentMobile2.svg'),
             contentTab: [
                {
                   id: 1,
@@ -50,7 +54,7 @@
                       '<span class="indigo-text">Po około 10 sek.</span> Można odebrać już wydrukowane zdjęcia! Zdjęcia standardowo drukowane są o wymiarach\n' +
                       '<span class="indigo-text">10x15 cm. PERSONALIZACJA:\n' +
                       '</span> tła, tekstu, daty, ramki, grafiki. Wybór różnej ilości i układu zdjęć na wydruku.',
-                  image: require('./../../assets/bg.jpg'),
+                  image: require('./../../assets/content11.jpg'),
                   textSide: 'left',
                   imgSide: 'right'
                },

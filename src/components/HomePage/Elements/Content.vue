@@ -40,7 +40,6 @@
 
 <style scoped>
    .image {
-      height: 100% !important;
       width: 100%;
       border-radius: 5px;
 
