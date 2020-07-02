@@ -27,5 +27,11 @@ export default {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  font-size: 1.2rem;
+}
+@media only screen and (max-width: 1024px) {
+  .font {
+    font-size: 1rem !important;
+  }
 }
 </style>

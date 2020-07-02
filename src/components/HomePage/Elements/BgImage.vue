@@ -1,6 +1,6 @@
 <template>
-   <div class="parallax-container bg">
-      <div class="parallax"><img :src="source" :alt="imgAlt"></div>
+   <div class="bg">
+      <img :src="source" alt="" class="img" width="50%">
    </div>
 </template>
 
@@ -19,24 +19,27 @@
    }
    img{
       z-index: 1000 !important;
+      height: 100vh;
+
    }
-   @media only screen and (max-width: 411px) {
-      .bg {
-         width: 411px;
-         overflow: hidden !important;
-      }
-   }
-   @media only screen and (max-width: 375px) {
-      .bg {
-         width: 375px;
-         overflow: hidden !important;
-      }
-   }
-   @media only screen and (max-width: 360px) {
-      .bg {
-         width: 360px;
-         overflow: hidden !important;
-      }
-   }
+   /*@media only screen and (max-width: 411px) {*/
+   /*   .bg {*/
+   /*      width: 411px;*/
+   /*      overflow: hidden !important;*/
+   /*   }*/
+   /*}*/
+   /*@media only screen and (max-width: 375px) {*/
+   /*   .bg {*/
+   /*      width: 375px;*/
+   /*      overflow: hidden !important;*/
+   /*   }*/
+   /*}*/
+   /*@media only screen and (max-width: 360px) {*/
+   /*   .bg {*/
+   /*      width: 360px;*/
+   /*      overflow: hidden !important;*/
+   /*   }*/
+   /*}*/
+
 
 </style>

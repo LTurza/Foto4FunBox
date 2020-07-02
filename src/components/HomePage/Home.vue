@@ -69,7 +69,7 @@
                      {cls: 'pink-text', desc: 'Pakiet standardBox+'},
                      {cls: 'indigo-text', desc: 'Pakiet VIPBox'}
                   ],
-                  image: require('./../../assets/bg.webp'),
+                  image: require('./../../assets/pakiety.webp'),
                   textSide: 'right',
                   imgSide: 'left',
                }
@@ -87,7 +87,7 @@
                      '<li>peruki</li>'+
                      '<li>i wiele innych, które urozmaicą waszą zabawę!</li>'+
                      '</ul>',
-                  image: require('./../../assets/bg.webp'),
+                  image: require('./../../assets/gadzety.webp'),
                   textSide: 'left',
                   imgSide: 'right'
                },
@@ -113,23 +113,10 @@
       text-align: justify;
    }
 
-   .font {
-      font-size: 1.2rem;
-   }
-
-   @media only screen and (max-width: 1024px) {
-      .font {
-         font-size: 1rem !important;
-      }
-   }
-
    @media only screen and (min-width: 1025px) {
       .font {
-         margin-top: 5%;
+         margin-top: 15%;
       }
-   }
-   .yel-text{
-      color: #fbc02d !important;
    }
 
 </style>

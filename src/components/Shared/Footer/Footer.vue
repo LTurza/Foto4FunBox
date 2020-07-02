@@ -1,10 +1,11 @@
 <template>
    <footer class="page-footer indigo">
       <div class="row">
-         <div class="col l6">
+         <div class="col l6 s12">
+            <br><br>
             <h5>Foto4FunBox</h5>
+            <br><br>
          </div>
-
          <app-links :links="links"/>
       </div>
       <div class="footer-copyright">
@@ -26,9 +27,9 @@
       data () {
          return {
             links: [
-               {id: 'email', icon: 'email', value: 'info@foto4funbox.pl'},
-               {id: 'phone1', icon: 'call', value: '503783232'},
-               {id: 'phone2', icon: 'call', value: '513989608'},
+               {id: 'email', icon: 'email', value: 'info@foto4funbox.pl', to: 'mailto:info@foto4funbox.pl', name: 'e-mail: '},
+               {id: 'phone1', icon: 'call', value: '503783232', to: 'tel:503783232', name: 'tel-1: '},
+               {id: 'phone2', icon: 'call', value: '513989608', to: 'tel:513989608', name: 'tel-2: '},
             ]
          }
       }
