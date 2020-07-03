@@ -3,5 +3,5 @@ import Packets from "./components/Packets/Packets";
 
 export const routes = [
    { path: '', component: Home},
-   { path: '/Packets', component: Packets }
+   { path: '/Packets:color', component: Packets }
 ]

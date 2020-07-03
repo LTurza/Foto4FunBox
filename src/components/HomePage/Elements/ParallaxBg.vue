@@ -14,5 +14,9 @@
 <style scoped>
    .parallax {
       background-color: black !important;
+      z-index: 100 !important;
+   }
+   img{
+      z-index: 1000 !important;
    }
 </style>
