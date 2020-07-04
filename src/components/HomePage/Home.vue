@@ -35,7 +35,7 @@
 <script>
    import BgImage from "./Elements/BgImage";
    import Content from "./Elements/Content";
-   import ParallaxBg from "./Elements/ParallaxBg";
+   import ParallaxBg from "../Shared/ParalaxBg/ParallaxBg";
 
    export default {
       name: "HomePage",

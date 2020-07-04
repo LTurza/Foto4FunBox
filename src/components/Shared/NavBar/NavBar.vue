@@ -4,13 +4,6 @@
          <transition
                  @before-enter="beforeEnter"
                  @enter="enter"
-                 @after-enter="afterEnter"
-                 @enter-cancelled="enterCanceled"
-
-                 @before-leave="beforeLeave"
-                 @leave="leave"
-                 @after-leave="afterLeave"
-                 @leave-cancelled="leaveCanceled"
                  :css="false"
                  mode="out-in"
                  appear
@@ -54,8 +47,8 @@
                {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets'}
             ],
             btnsRight: [
-               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: ''},
-               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: ''}
+               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: '/Promotion'},
+               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: '/Contact'}
             ],
             sideTabs: [
                {id: 'HomeMobile', name: 'STRONA GŁÓWNA', icon: 'credit_card', url: ''},
@@ -87,7 +80,6 @@
                   clearInterval(interval);
                   done();
                }
-               el.css("transform", "");
             }, 20);
          },
       }
