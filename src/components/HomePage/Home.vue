@@ -56,7 +56,7 @@
                       '<span class="indigo-text">Po około 10 sek.</span> Można odebrać już wydrukowane zdjęcia! Zdjęcia standardowo drukowane są o wymiarach\n' +
                       '<span class="indigo-text">10x15 cm. PERSONALIZACJA:\n' +
                       '</span> tła, tekstu, daty, ramki, grafiki. Wybór różnej ilości i układu zdjęć na wydruku.',
-                  image: require('./../../assets/content11.webp'),
+                  image: require('./../../assets/content11.jpg'),
                   textSide: 'left',
                   imgSide: 'right'
                },
@@ -87,7 +87,7 @@
                      '<li>peruki</li>'+
                      '<li>i wiele innych, które urozmaicą waszą zabawę!</li>'+
                      '</ul>',
-                  image: require('./../../assets/gadzety.webp'),
+                  image: require('./../../assets/gadzety.jpg'),
                   textSide: 'left',
                   imgSide: 'right'
                },

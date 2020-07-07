@@ -5,7 +5,7 @@ import Contact from "./components/Contact/Contact";
 
 export const routes = [
    { path: '', component: Home},
-   { path: '/Packets', component: Packets },
-   { path: '/Promotion', component: Promotion },
+   { path: '/Packets/:color', component: Packets },
+   { path: '/Promotion/:color', component: Promotion },
    { path: '/Kontakt', component: Contact }
 ]

@@ -8,7 +8,7 @@
                  mode="out-in"
                  appear
          >
-            <nav class="indigo nav-height">
+            <nav :class=" color  +' indigo nav-height'">
                <div class="nav-wrapper">
                   <div class="container">
                      <div class="row">
@@ -44,11 +44,11 @@
          return {
             btnsLeft: [
                {id: 'HomeDesk', name: 'STRONA GŁÓWNA', icon: 'credit_card', cls: 'material-icons left', url: '/'},
-               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets'}
+               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets/red'}
             ],
             btnsRight: [
-               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: '/Promotion'},
-               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: '/Contact'}
+               {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: '/Promotion/green'},
+               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: '/Kontakt'}
             ],
             sideTabs: [
                {id: 'HomeMobile', name: 'STRONA GŁÓWNA', icon: 'credit_card', url: ''},
@@ -58,6 +58,7 @@
             ],
             source: require('../../../assets/logo.svg'),
             elementWidth: 100,
+            color: this.$route.params.color,
          }
       },
       methods: {
@@ -68,6 +69,7 @@
 
          },
          enter(el, done) {
+            setInterval(null, 1);
             let round = 1;
             let trenslate = -4;
             const interval = setInterval(() => {
