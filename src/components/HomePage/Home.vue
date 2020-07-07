@@ -1,6 +1,6 @@
 <template>
    <div>
-      <app-bg-image :source="bgImage" img-alt="background"/>
+      <app-bg-image  img-alt="background"/>
       <app-content
               v-for="content in contentTab"
               :key="content.id"
