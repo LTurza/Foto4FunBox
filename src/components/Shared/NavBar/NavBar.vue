@@ -8,7 +8,7 @@
                  mode="out-in"
                  appear
          >
-            <nav :class=" color  +' indigo nav-height'">
+            <nav :class=" color  +' nav-height'">
                <div class="nav-wrapper">
                   <div class="container">
                      <div class="row">
@@ -43,12 +43,12 @@
       data() {
          return {
             btnsLeft: [
-               {id: 'HomeDesk', name: 'STRONA GŁÓWNA', icon: 'credit_card', cls: 'material-icons left', url: '/'},
-               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets/red'}
+               {id: 'HomeDesk', name: 'STRONA GŁÓWNA', icon: 'credit_card', cls: 'material-icons left active', url: '/indigo'},
+               {id: 'PacketsDesk', name: 'PAKIETY', icon: 'border_all', cls: 'material-icons right', url: '/Packets/deep-orange accent-4'}
             ],
             btnsRight: [
                {id: 'PromoDeks', name: 'PROMOCJE', icon: 'attach_money', cls: 'material-icons left', url: '/Promotion/green'},
-               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: '/Kontakt'}
+               {id: 'ContactDesk', name: 'KONTAKT', icon: 'call', cls: 'material-icons right', url: '/Kontakt/orange'}
             ],
             sideTabs: [
                {id: 'HomeMobile', name: 'STRONA GŁÓWNA', icon: 'credit_card', url: ''},
@@ -92,8 +92,5 @@
 <style scoped>
    .nav-height {
       height: 100px;
-   }
-
-   .navbar {
    }
 </style>

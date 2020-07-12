@@ -1,6 +1,6 @@
 <template>
    <ul class="hide-on-med-and-down">
-      <li v-for="btn in btns" :key="btn.id">
+      <li v-for="btn in btns" :key="btn.id" >
          <router-link :to="btn.url">
             <i :class="btn.cls"> {{ btn.icon }} </i>
             {{ btn.name }}

@@ -4,8 +4,8 @@ import Promotion from "./components/Promotion/Promotion";
 import Contact from "./components/Contact/Contact";
 
 export const routes = [
-   { path: '', component: Home},
+   { path: '/:color', component: Home},
    { path: '/Packets/:color', component: Packets },
    { path: '/Promotion/:color', component: Promotion },
-   { path: '/Kontakt', component: Contact }
+   { path: '/Kontakt/:color', component: Contact }
 ]

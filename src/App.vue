@@ -1,12 +1,18 @@
 <template>
    <div id="app">
 
-         <app-nav-bar/>
+      <app-nav-bar :key="rerender"/>
       <transition name="slide-left-fade" mode="out-in">
          <router-view/>
       </transition>
-      <transition name="slide-up-fade" appear mode="out-in">
-         <app-footer/>
+      <transition
+              @before-enter="beforeEnter"
+              @enter="enter"
+              :css="false"
+              mode="out-in"
+              appear
+      >
+         <app-footer :key="rerender"/>
       </transition>
    </div>
 </template>
@@ -22,6 +28,40 @@
          appNavBar: NavBar,
          appFooter: Footer,
       },
+      data() {
+         return {
+            color: ''
+         }
+      },
+      computed: {
+         rerender() {
+            return this.$route.params.color
+         }
+      },
+      methods: {
+         beforeEnter(el) {
+            this.elementWidth = 0;
+            el.style.opacity = this.elementWidth + '%';
+            el.style.transform = 'translateY( 4rem )';
+
+         },
+         enter(el, done) {
+            setInterval(null, 1);
+            let round = 1;
+            let trenslate = 4;
+            const interval = setInterval(() => {
+               el.style.opacity = (this.elementWidth + round * 10) + '%';
+               trenslate -= 0.4;
+               el.style.transform = 'translateY(' + trenslate + 'rem )';
+
+               round++;
+               if (round > 10) {
+                  clearInterval(interval);
+                  done();
+               }
+            }, 20);
+         },
+      }
    }
 </script>
 
@@ -66,4 +106,5 @@
       transform: translateX(2rem);
       opacity: 0;
    }
+
 </style>

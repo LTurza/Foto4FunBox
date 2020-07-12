@@ -104,7 +104,7 @@
          appBgImage: BgImage,
          appContent: Content,
          appParalaxBg: ParallaxBg
-      }
+      },
    }
 </script>
 
