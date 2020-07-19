@@ -1,22 +1,22 @@
 <template>
-   <div>
-      <app-map class="map"/>
-   </div>
+  <div>
+    <app-map class="map" />
+  </div>
 </template>
 
 <script>
-   import Map from "./Elements/Map";
+import Map from "./Elements/Map";
 
-   export default {
-      name: "Contact",
-      components: {
-         appMap: Map
-      }
-   }
+export default {
+  name: "Contact",
+  components: {
+    appMap: Map,
+  },
+};
 </script>
 
 <style scoped>
-   .map {
-      margin-top: 2rem !important;
-   }
+.map {
+  margin-top: 2rem !important;
+}
 </style>

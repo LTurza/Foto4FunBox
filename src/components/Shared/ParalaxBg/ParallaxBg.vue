@@ -1,22 +1,30 @@
 <template>
-   <div class="parallax-container">
-      <div class="parallax"><img :src="source" :alt="imgAlt" height="200%"></div>
-   </div>
+  <div class=" my-parallax-container" v-source>
+    <!--   <img :src="source" alt="" height="150%">-->
+  </div>
 </template>
 
 <script>
-   export default {
-      name: "ParallaxBg",
-      props: ['source', 'imgAlt']
-   }
+export default {
+  name: "ParallaxBg",
+  props: ["source", "imgAlt"],
+  directives: {
+    parallax: {
+      source(el) {
+        el.style.backgroundImage = "./../../../assets/index-bg-1.svg";
+      },
+    },
+  },
+};
 </script>
 
 <style scoped>
-   .parallax {
-      background-color: black !important;
-      z-index: 100 !important;
-   }
-   img{
-      z-index: 1000 !important;
-   }
+.my-parallax-container {
+  background-color: black;
+  /*background-image: ;*/
+  background-attachment: fixed !important;
+  background-size: cover;
+  height: 500px;
+  /*z-index: ;*/
+}
 </style>
