@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-parallax-bg :source="parallaxSource" />
+    <appParallaxBg cls="bg-3" class="hide-on-med-and-down" />
     <div class="container">
       <table>
         <thead>

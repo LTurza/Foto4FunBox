@@ -1,6 +1,6 @@
 <template>
   <div>
-    <app-paralax-bg :source="parallaxSource" />
+    <appParallaxBg cls="bg-2" class="hide-on-med-and-down" />
     <app-packets />
   </div>
 </template>
@@ -12,7 +12,7 @@ import Packets from "./Elements/PacketsList";
 export default {
   name: "Packets",
   components: {
-    appParalaxBg: ParallaxBg,
+    appParallaxBg: ParallaxBg,
     appPackets: Packets,
   },
   data() {
