@@ -1,5 +1,5 @@
 <template>
-  <footer :class="'page-footer ' + color">
+  <footer :class="'page-footer indigo ' + color">
     <div class="row">
       <div class="col l6 s12">
         <br /><br />

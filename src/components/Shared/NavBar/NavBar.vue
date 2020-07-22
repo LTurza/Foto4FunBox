@@ -8,7 +8,7 @@
         mode="out-in"
         appear
       >
-        <nav :class="color + ' nav-height'">
+        <nav :class="'indigo ' + color + ' nav-height'">
           <div class="nav-wrapper">
             <div class="container">
               <div class="row">
@@ -48,7 +48,7 @@ export default {
           name: "STRONA GŁÓWNA",
           icon: "credit_card",
           cls: "material-icons left active",
-          url: "/indigo",
+          url: "/",
         },
         {
           id: "PacketsDesk",
