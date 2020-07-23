@@ -22,7 +22,7 @@
         </nav>
       </transition>
     </div>
-    <app-side-nav :tabs="sideTabs" name="Foto4FunBox" />
+    <app-side-nav :btns="sideTabs" name="Foto4FunBox" />
   </div>
 </template>
 
@@ -79,11 +79,26 @@ export default {
           id: "HomeMobile",
           name: "STRONA GŁÓWNA",
           icon: "credit_card",
-          url: "",
+          url: "/",
         },
-        { id: "PacketsMobile", name: "PAKIETY", icon: "border_all", url: "" },
-        { id: "PromoMobile", name: "PROMOCJE", icon: "attach_money", url: "" },
-        { id: "ContactMobile", name: "KONTAKT", icon: "call", url: "" },
+        {
+          id: "PacketsMobile",
+          name: "PAKIETY",
+          icon: "border_all",
+          url: "/Packets/deep-orange accent-4",
+        },
+        {
+          id: "PromoMobile",
+          name: "PROMOCJE",
+          icon: "attach_money",
+          url: "/Promotion/green",
+        },
+        {
+          id: "ContactMobile",
+          name: "KONTAKT",
+          icon: "call",
+          url: "/Kontakt/orange",
+        },
       ],
       source: require("../../../assets/logo.svg"),
       elementWidth: 100,
