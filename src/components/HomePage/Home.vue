@@ -18,6 +18,7 @@
       ></div>
     </app-content>
     <appParallaxBg cls="bg-1" class="hide-on-med-and-down" />
+    <appParallaxBg cls="bg-1-mobile" class="hide-on-large-only" />
 
     <app-content
       v-for="content in contentTab2"

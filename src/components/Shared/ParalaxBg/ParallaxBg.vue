@@ -26,4 +26,8 @@ export default {
 .bg-3 {
   background-image: url("./../../../assets/index-bg-3.svg");
 }
+.bg-1-mobile {
+  background-image: url("./../../../assets/contentMobile1.svg");
+  background-size: 300%;
+}
 </style>
