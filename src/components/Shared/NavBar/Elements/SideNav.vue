@@ -11,7 +11,7 @@
       <div class="divider"></div>
     </li>
     <li class="left" v-for="btn in btns" :key="btn.id">
-      <router-link :to="btn.url">
+      <router-link :to="btn.url" >
         <i :class="btn.cls"> {{ btn.icon }} </i>
         {{ btn.name }}
       </router-link>

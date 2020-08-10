@@ -127,5 +127,8 @@ export default {
   .font {
     margin-top: 15%;
   }
+  .container {
+    width: 100vw !important;
+  }
 }
 </style>

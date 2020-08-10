@@ -13,7 +13,7 @@ export default {
 .my-parallax-container {
   height: 400px;
   background: #000 no-repeat;
-  background-size: 200%;
+  background-size: cover;
   z-index: 100;
   background-attachment: fixed;
 }
